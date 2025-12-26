@@ -19,10 +19,20 @@ header {
     padding: 60px;
 }
 
-#menu-toggle {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
+.menu-icon {
+    display: block;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 2000;
+    position: fixed; /
+    top: 20px;
+    right: 20px;
+}
+
+#menu-toggle:checked ~ nav {
+    transform: translateY(0);
+    top: 70px; 
+    right: 20px;
 }
 
 a {
@@ -775,6 +785,7 @@ nav ul li a {
         font-size:22px;
     }
 }
+
 
 
 
